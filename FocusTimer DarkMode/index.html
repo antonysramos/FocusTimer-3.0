@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer 2.0</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="./js/main.js" defer></script>
+		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+</head>
+<body>
+	<div class="app">
+		<div class="toggle-mode">
+			<button class="ph ph-sun"></button>
+			<button class="ph ph-moon-stars"></button>
+		</div>
+
+		<div class="central">
+        <section class="timerDisplay">
+            <div class="timerCountdown flex">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+
+						<div class="timerControls flex">
+								<button data-action="toggleRunning" class="ph ph-play-circle" id="play"></button>
+								<button data-action="toggleRunning" class="ph ph-pause-circle" id="pause"></button>
+								<button data-action="reset" class="ph ph-stop-circle" id="stop"></button>
+								<button data-action="plus" class="ph ph-plus-circle" id="plus"></button>
+								<button data-action="minus" class="ph ph-minus-circle" id="minus"></button>
+						</div>
+
+        </section>
+
+        <section class="soundCards">
+						<div id="card" class="ph ph-tree flex C1">
+								<input class="florest slider " type="range" min="0" max="1" value="0.5" step="0.008">
+						</div>
+						<div id="card" class="ph ph-cloud-rain flex C2">
+								<input class="rain slider " type="range" min="0" max="1" value="0.5" step="0.008">
+						</div>
+						<div id="card" class="ph ph-storefront flex C3">
+								<input class="store slider " type="range" min="0" max="1" value="0.5" step="0.008">
+						</div>
+						<div id="card" class="ph ph-flame flex C4">
+							<input class="flame slider " type="range" min="0" max="1" value="0.5" step="0.008">
+						</div>
+				</section>
+			</div>
+
+			<div class="toggle-music">
+				<button data-action="toggleMusic" class="ph ph-speaker-none"></button>
+				<button data-action="toggleMusic" class="ph ph-speaker-high"></button>
+			</div>
+    </div>
+</body>
+</html>
